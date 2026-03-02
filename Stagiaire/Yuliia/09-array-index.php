@@ -20,3 +20,4 @@ echo $monTab[8];
 echo "<hr>";
 echo $monTab[9];
 echo "<hr>";
+echo count($monTab);
