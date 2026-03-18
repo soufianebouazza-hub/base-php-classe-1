@@ -10,14 +10,20 @@ function calculSimple($a,$operateur,$b) {
         return $res = ($a - $b);
     } elseif ($operateur === "*") {
         return $res = ($a * $b);
-    } elseif ($operateur === "/") {
-        return $res = ($a / $b);
-    } elseif ($operateur === "/" && ($a == 0 || $a == 0)) {
-        return $res = "Vous ne pouvez pas divisez par 0";
+    } elseif ($operateur === "/") { 
+        if ($a == 0 || $b == 0)
+            return $res = "Vous ne pouvez pas divisez par 0";
+        return $res = ($a / $b); 
     } else {
         return $res = "Il y a un probleme";
     }
 }
-
- echo calculSimple(1,"+",6) ;
+$res = "";
+$premiereValeur = 1;
+$deuxiemeValeur = 6;
+$opera = "/";
+// if (calculSimple(2,"+",6)) {
+    $res .= calculSimple($premiereValeur,$opera,$deuxiemeValeur);
+    echo "{$premiereValeur} {$opera} {$deuxiemeValeur} = {$res}";
+//}
 
