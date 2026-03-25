@@ -3,3 +3,8 @@
 # On protège nos variables et constantes dangereuses
 # du fichier config.php
 config.php
+
+# On refuse tout les fichier de datas
+datas/*
+# Sauf le fichier zipper qu'on va garder
+!datas/projet.zip
