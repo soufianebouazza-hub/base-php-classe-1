@@ -48,12 +48,31 @@ Mettez-y des `.gitkeep` dans chaque dossier et faîtes des commit.
 # __DIR__ constante magique qui donnera
 # le chemin absolu vers la racine du projet
 const ROOT_PATH = __DIR__;
+
+// constante contenant les pages accessibles sans être connecté
+const PUBLIC_PAGES = [
+    'home',
+    'about',
+    'contact',
+    'login',
+    'register',
+];
 ```
 
 Créez le fichier `config.php` à la racine du projet. Il est protégé grâce au `.gitconfig`.
+
+#### Création du config.ini.php
+
+Pour les besoins de l'exercice, nous allons créer un fichier de configuration `config.ini.php` qui contiendra des constantes de sécurité. Ce fichier doit être suivi par `git` et permet de le copier pour créer le `config.php` qui lui ne doit pas être suivi par `git` et qui contiendra les 'vraies' valeurs de sécurité.
 
 ### Phase 3
 
 #### Création du contôlleur frontal
 
 Le front controller, nommé `public/index.php`, est le seul fichier `php` qui sera accessible à un utilisateur externe.
+
+####
+
+Il va devoir Recréer config.php pour accéder aux contantes de sécurité.
+```php
+
