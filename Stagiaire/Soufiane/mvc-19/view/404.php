@@ -10,11 +10,13 @@
 
     <header>
         <?php
+        // Structure commune pour garder la meme mise en page.
         include 'inc/navbar.php';
         ?>
     </header>
 
     <main>
+        <!-- Affichee quand la page demandee n'existe pas dans la liste blanche -->
         <section style="text-align: center; margin-top: 10vh;">
             <h1>Erreur_404</h1>
             <p>retour a lacceuil <a href="./">cliquer ici</a></p>
@@ -23,6 +25,7 @@
 
     <footer>
         <?php 
+        // Footer partage.
         include 'inc/footer.php';
         ?>
     </footer>

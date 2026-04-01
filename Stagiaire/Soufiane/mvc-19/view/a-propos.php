@@ -10,10 +10,12 @@
 
     <header>
         <?php 
+        // Inclusion de la navigation commune.
         include 'inc/navbar.php';
         ?>
     </header>
 <main>
+        <!-- Page de presentation personnelle -->
         <h2>À propos de moi</h2>
         <div class="card" style="padding: 2rem;">
             <p style="margin-bottom: 1rem;">
@@ -26,6 +28,7 @@
     </main>
     <footer>
         <?php 
+        // Inclusion du footer commun.
         include 'inc/footer.php';
         ?>
     </footer>

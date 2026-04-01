@@ -10,10 +10,12 @@
 
     <header>
         <?php 
+        // Meme navbar que sur les autres vues.
         include 'inc/navbar.php';
         ?>
     </header>
 <main>
+        <!-- Presentation des projets sous forme de cartes -->
         <h2>Mes Projets Techniques</h2>
         <div class="grid-3">
             
@@ -54,6 +56,7 @@
     </main>
     <footer>
         <?php 
+        // Footer commun.
         include 'inc/footer.php';
         ?>
     </footer>

@@ -10,10 +10,12 @@
 
     <header>
         <?php 
+        // Navigation commune a toutes les pages.
         include 'inc/navbar.php';
         ?>
     </header>
 <main>
+        <!-- Grille de competences techniques -->
         <h2>Mes Compétences</h2>
         <div class="grid-2">
             <div class="card card-content">
@@ -44,6 +46,7 @@
     </main>
     <footer>
         <?php 
+        // Footer partage.
         include 'inc/footer.php';
         ?>
     </footer>

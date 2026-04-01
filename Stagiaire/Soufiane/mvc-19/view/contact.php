@@ -10,15 +10,18 @@
 
     <header>
         <?php
-        // appel de la navbar
+        // Navbar commune.
         include 'inc/navbar.php';
         ?>
     </header>
 
 <main>
+        <!-- Le formulaire est gere en JavaScript, sans envoi serveur pour l'instant -->
+        <!-- Pour progresser : prochaine etape = traiter aussi les donnees en PHP cote serveur -->
         <h2>Contactez-moi</h2>
         <div class="card" style="padding: 2rem; max-width: 600px; margin: 0 auto;">
             <form id="contactForm">
+                <!-- Le lien entre label et input avec for/id est important pour l'accessibilite -->
                 <div class="form-group">
                     <label for="nom">Nom ou Entreprise</label>
                     <input type="text" id="nom" name="nom" required placeholder="Votre nom">
@@ -41,10 +44,12 @@
     </main>
 	
   <?php
-        // appel du footer
+        // Footer commun.
         include 'inc/footer.php';
         ?>
 
+    <!-- Ce script gere ici la simulation d'envoi -->
+    <!-- Plus tard, tu pourras remplacer cette simulation par un vrai envoi vers PHP -->
     <script src="js/script.js"></script>
 </body>
 </html>
